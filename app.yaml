@@ -1,0 +1,15 @@
+
+runtime: go
+api_version: go1
+
+handlers:
+  - url: /.*
+    secure: always
+    script: _go_app
+
+skip_files:
+  - ^client-secret.json.*$
+  - ^cmd/.*$
+  - ^fixtures/.*$
+  - ^.*_test.go$
+  - ^\.git/.*$
