@@ -1,7 +1,7 @@
 // Package sudoku provides a sudoku simple and fast solver based on "Solving
 // Every Sudoku Puzzle" by Peter Norvig (http://norvig.com/sudoku.html).
 //
-// The approach by Norvig uses contraint propagation/satisfaction and search.
+// The approach by Norvig uses constraint propagation/satisfaction and search.
 // Anytime a number is assigned to a square, this number is removed from any
 // 'peers' (see below for explanation).  If any of the peer then becomes filled
 // by having only possibility remaining, this is propagated as well
