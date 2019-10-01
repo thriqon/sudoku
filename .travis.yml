@@ -3,7 +3,7 @@ sudo: false
 
 language: go
 
-go: 1.5
+go: 1.13
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_a601de447bc0_key -iv $encrypted_a601de447bc0_iv -in client-secret.json.enc -out client-secret.json -d
