@@ -17,7 +17,7 @@ func TestSquare(t *testing.T) {
 	s = s.(emptySquare).eliminated(1)
 
 	if s.(emptySquare).eliminatedValues != (1 << 1) {
-		t.Error("Expected to have eliminated 1, but was", s.(emptySquare).eliminated)
+		t.Error("Expected to have eliminated 1, but was", s.(emptySquare).eliminatedValues)
 	}
 
 	for i := uint8(1); i <= uint8(8); i++ {
